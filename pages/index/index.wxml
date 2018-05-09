@@ -1,0 +1,156 @@
+<!--index.wxml-->
+<view class="container" >
+  <view style="width:100%;height:20%;background:linear-gradient(to right,#61b5ea,#0f38ed)" class=" userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称
+    </button>
+
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"
+      background-size="cover"></image>
+      <view class='info'>
+        <text >{{userInfo.nickName}}</text>
+        <view class="Vip">
+             <view>{{Vip}}</view>
+             <view>{{initdate}}</view>
+        </view>
+      </view>
+     
+    </block>
+     <button hover-class="button-over"class='button'style="position:absolute;right:12%;top:7%;color:white;background-color:#23be5d" bindtap='startvip'>{{buttonword}}</button>
+  </view>
+
+  <!--搜索框-->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+     <view class="weui-search-bar__box">
+       <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+       <input type="text" class="weui-search-bar__input" placeholder="输入比赛编号或联赛信息或队伍名称查询" name="info" value="{{Infor}}" bindinput="inforinput"bindconfirm="search" />
+       <view class="weui-icon-clear" bindtap="wxSearchClear">
+          <icon type="clear" size="14"></icon>
+       </view>
+     </view>
+    </view>
+    
+  </view>
+
+  <view class='news'style="font-weight:bold;font-size:15px;color:green;font-family:sans-serif">赛事分析</view>
+
+   <!--表格-->
+  <view class='table'>
+       <view class='head'>
+          <view class='ta'>编号</view>
+          <view class='tb'>联赛</view>
+          <view class='tc'>队伍</view>
+          <view class='td'>
+               <view class='tg'>初始赔率   即时赔率</view>
+               <view class='tf'>
+                  <view class='one'>胜</view>
+                  <view class='two'>平</view>
+                  <view class='three'>负</view>
+               </view>
+          </view>
+          <view class='te'>
+               <view class='tw'>初始离散 即时离散</view>
+               <view class='tf'>
+                  <view class='one'>胜</view>
+                  <view class='two'>平</view>
+                  <view class='three'>负</view>
+                  <view class='four'> </view>
+               </view>
+          </view>
+       </view>
+       <!--查询结果-->
+      <scroll-view scroll-y="true"style="height: 85%;">
+       <view>
+        <block wx:for="{{listData}}"wx:key="{{count}}">
+           <view class='a'>
+           <view class='ta1'>{{item.count}}</view>
+           <view class='tb1'>{{item.leagueName}}</view>
+           <view class='b'>
+                <view>{{item.hostTeamName}}</view>
+                <view>VS</view>
+                <view>{{item.guestTeamName}}</view>
+                <view>{{item.matchTime}}</view>
+           </view>
+           <view class='c'>
+              <view class='f'>
+                <view>{{item.initialWinOdds}}</view>
+                <view>{{item.initialDrawOdds}}</view>
+                <view>{{item.initialLoseOdds}}</view>
+              </view>
+              <view class='f'>
+                <view>{{item.currentWinOdds}}</view>
+                <view>{{item.currentDrawOdds}}</view>
+                <view>{{item.currentLoseOdds}}</view>
+              </view>
+
+           </view>
+           <view class='d'>
+                <view class='e'style='width:95%'>
+                  <view class='f'>
+                    <view>{{item.initialWinScatter}}</view>
+                    <view>{{item.initialDrawScatter}}</view>
+                    <view>{{item.initialLoseScatter}}</view>
+                  </view>
+                  <view class='f'>
+                    <view>{{item.currentWinScatter}}</view>
+                    <view>{{item.currentDrawScatter}}</view>
+                    <view>{{item.currentLoseScatter}}</view>
+                  </view>
+                </view>
+                <view bindtap='toinfor'>更多>></view>
+           </view>
+         </view>
+        </block>
+       
+       
+       
+       </view>
+
+
+
+       <block wx:for="{{initData}}"wx:key="{{Id}}">
+               <view class='a'>
+           <view class='ta'>{{item.count}}</view>
+           <view class='tb'>{{item.leagueName}}</view>
+           <view class='b'>
+                <view>{{item.hostTeamName}}</view>
+                <view>VS</view>
+                <view>{{item.guestTeamName}}</view>
+                <view>{{item.matchTime}}</view>
+           </view>
+           <view class='c'>
+              <view class='f'>
+                <view>{{item.initialWinOdds}}</view>
+                <view>{{item.initialDrawOdds}}</view>
+                <view>{{item.initialLoseOdds}}</view>
+              </view>
+              <view class='f'>
+                <view>{{item.currentWinOdds}}</view>
+                <view>{{item.currentDrawOdds}}</view>
+                <view>{{item.currentLoseOdds}}</view>
+              </view>
+
+           </view>
+           <view class='d'>
+                <view class='e'style='width:95%'>
+                  <view class='f'>
+                    <view>{{item.initialWinScatter}}</view>
+                    <view>{{item.initialDrawScatter}}</view>
+                    <view>{{item.initialLoseScatter}}</view>
+                  </view>
+                  <view class='f'>
+                    <view>{{item.currentWinScatter}}</view>
+                    <view>{{item.currentDrawScatter}}</view>
+                    <view>{{item.currentLoseScatter}}</view>
+                  </view>
+                </view>
+                <view bindtap='toinfor'>更多>></view>
+           </view>
+         </view>
+       </block>
+      </scroll-view>
+    
+  </view>
+
+</view>

@@ -1,0 +1,371 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+}
+
+.info{
+   display: flex;
+   flex-direction: column 
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.Vip {
+  color: #aaa;
+  padding-top:0;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row
+}
+
+
+
+.container{ 
+  position: fixed;
+  display: flex;
+   flex-direction: column;
+    margin-top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 5%;
+
+    }
+ 
+ .button{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: bold;
+  box-shadow:3rpx 3rpx 3rpx 3rpx rebeccapurple
+ }
+
+ .button-over{
+  background-color:darkgray;
+  opacity: 0.7;
+ }
+
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 7px;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+
+.weui-search-bar {
+  position: absolute;
+  top:22%;
+  padding: 4px 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #9df568;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
+  width: 100%
+}
+
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 11px 8px;
+  font-size: 0;
+}
+
+.weui-search-bar__input {
+  height:35px;
+  font-size: 10px;
+
+}
+
+.table{
+   
+    border: 2px solid darkgreen;
+    width: 98%;
+    position: absolute;
+    top:36%;
+    height: 60%;
+
+}
+
+.table1{
+   
+    border: 1px solid darkgreen;
+    width: 98%;
+    position: absolute;
+    top:70%
+}
+
+.news{
+   position: absolute;
+   top: 31%
+}
+
+
+.head{
+  display: flex;  
+  width: 100%;  
+  justify-content: center;  
+  height:15%;  
+  align-items: center;  
+  background: #d3fcbb
+}
+.head1{
+  display: flex;  
+  width: 100%;  
+  justify-content: center;  
+  height:5%;  
+  align-items: center;  
+  background: #93DB70
+}
+
+
+.ta{
+  width: 10%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  height: 100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+.tb{
+  width: 10%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  height: 100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+.ta1{
+  width: 10%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  height: 100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+.tb1{
+  width: 10%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  height: 100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+
+.tc{
+  width: 20%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  height:100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+    border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+
+.td{
+  width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;
+  flex-direction: column;  
+  height: 100%;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+    border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+
+.te{
+  width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+   flex-direction: column;  
+  height: 100%;  
+  align-items: center;  
+  border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+
+.tf{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #050505;     
+  align-items: center;  
+  margin-top: 10%
+  
+}
+
+
+
+.tg{
+  margin-top:0%
+}
+
+.tw{
+  margin-top:0%
+}
+
+
+
+
+.one{
+  justify-content: center;
+  color: #fff;  
+  display: flex;  
+  height: 10px;  
+  width: 20px;
+  align-items: center;  
+   background: #bce5b7
+}
+
+
+.two{
+  justify-content: center;
+  color: #fff;  
+  display: flex;  
+  height: 10px; 
+  width: 20px; 
+  align-items: center;  
+   background: #bce5b7
+}
+
+
+.three{
+  justify-content: center;
+  color:#fff;  
+  display: flex;  
+  height: 10px;  
+  width: 20px;  
+  align-items: center;  
+  background: #bce5b7
+
+}
+
+.four{
+  justify-content: center;
+  color:#fff;  
+  display: flex;  
+  height: 10px;  
+  width: 20px;  
+  align-items: center;  
+ background: #bce5b7
+
+}
+
+.a{
+  display: flex;
+  flex-direction: row;
+  height: 3rem
+}
+.b{
+  width: 20%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  flex-direction: column;
+  height: 3rem;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+  border-bottom: 1px solid darkgreen;
+  font-size: 7px
+}
+.c{
+  width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  flex-direction: column;
+  height: 3rem;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+    border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+
+.d{
+  width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  flex-direction: row;
+  height: 3rem;  
+  align-items: center;  
+    border-bottom: 1px solid darkgreen;
+  font-size: 10px
+}
+.e{
+  width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  flex-direction: column;
+  height: 3rem;  
+  align-items: center;  
+  border-right: 1px solid darkgreen;
+   
+  font-size: 10px
+}
+.e1{
+width: 30%  ;
+  justify-content: center;
+  color: #050505;  
+  display: flex;  
+  flex-direction: column;
+  height: 3rem;  
+  align-items: center;  
+  
+  font-size: 10px
+
+}
+
+.f{
+ display: flex;
+ flex-direction: row
+}

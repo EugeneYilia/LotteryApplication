@@ -1,0 +1,31 @@
+<!--pages/startvip/startvip.wxml-->
+
+<view>
+  
+  <view class='c'>
+     <view class='b'style="font-size:14px">会员套餐</view>
+     <view class='d'style="font-size:12px">
+       <view>1个月</view>
+       <view style='color:red'>{{onemonth}}</view>
+       <view ><button class='button'style="position:absolute;right:15px;top:48px" bindtap=''>开通</button></view>
+     </view>
+     <view class='d'style="font-size:12px">
+       <view>3个月</view>
+       <view style='color:red'>{{threemonth}}</view>
+       <view><button class='button'style="position:absolute;right:15px;top:89px" bindtap=''>开通</button></view>
+     </view>
+     <view class='d'style="font-size:12px">
+       <view>12个月</view>
+       <view style='color:red'>{{oneyear}}</view>
+       <view><button class='button'style="position:absolute;right:15px;top:130px" bindtap=''>开通</button></view>
+     </view>
+     <view class='b'style="font-size:14px">会员特权</view>
+     <view class='prio'>
+       <view style='font-size:10px;'class="w">查看所有比赛信息</view>
+       <view style='font-size:10px;'class="x">更加精准的数据</view>
+     
+     </view>
+  </view>
+
+
+</view>

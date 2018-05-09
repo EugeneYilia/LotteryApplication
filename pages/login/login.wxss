@@ -1,0 +1,67 @@
+/* pages/login/login.wxss */
+.a{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+input{
+height: 80rpx;
+margin-left: 25rpx;
+margin-right: 25rpx;
+
+}
+.button{
+   border: 2px solid darkgreen;
+   background: white;
+   font-size: 15px;
+  color: darkgreen;
+   width: 95%;
+   height: 40px;
+   line-height: 35px;
+
+}
+.ph{
+  color: gainsboro;
+  font-size: 0.575em;
+
+}
+
+
+.na{
+    margin: 20rpx 20rpx 0rpx 500rpx;
+}
+.button1{
+   border: 2px solid black;
+   background:darkgreen;
+   font-size: 15px;
+   color: white;
+   width: 95%;
+   height: 40px;
+   line-height: 35px;
+}
+.button-hover {
+  background-color: darkgray;
+  opacity: 0.7;
+}
+
+button{
+  margin: 40rpx 20rpx 0 20rpx;
+}
+.section{
+  margin-top: 10%;
+   height: 50px;
+   width:100%;
+}
+.section1{
+   margin-top:10%;
+   width: 100%;
+}
+.inputview{
+   margin: 40rpx 20rpx 0rpx 20rpx;
+    border: 2rpx solid gainsboro;
+    border-radius: 5px;
+    height: 80rpx;
+
+}

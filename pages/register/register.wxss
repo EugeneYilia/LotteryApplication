@@ -1,0 +1,43 @@
+/* pages/register/register.wxss */
+.total{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkblue;
+  height: 100%;
+  width: 100%
+}
+.a{
+   display: flex;
+   flex-direction: row;
+   margin: 40rpx 20rpx 0 80rpx;
+   
+}
+
+
+input{
+   font-size: 10px;
+   border: 1px solid darkgreen;
+   border-radius: 5px
+}
+
+
+.sendMsg {
+  font-size: 10px;
+  color: white;
+   height: 25px;
+   line-height: 25px;
+   text-align: center;
+  width: 30%;
+  border: 0px solid darkblue;
+  border-radius: 5px;
+  background: #adb0bd
+}
+text{
+  font-size: 12px
+}
+
+button{
+   height: 40px;
+   line-height: 40px;
+   margin-top: 80rpx 
+}

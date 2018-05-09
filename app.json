@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/startvip/startvip",
+    "pages/person/person",
+    "pages/evaluate/evaluate",
+    "pages/personalinfor/personalinfor",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/score/score"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "竞彩助手",
+    "navigationBarTextStyle":"black"
+  }
+}

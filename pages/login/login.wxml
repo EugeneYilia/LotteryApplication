@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class='a'>
+  <view class='section'>
+    <image style="height:100%;width:100%"src='../../assets/logo.png'mode="aspectFit"></image>
+  </view>
+  <view class='section1'>
+    <view class='inputview'>
+      <input  name="username"type="text"placeholder-class="ph" confirm-type='done' placeholder='请输入用户名或者手机号码'bindinput="setname"></input>
+    </view>
+    <view class='inputview'>
+      <input  name="password" type="text"placeholder-class="ph"confirm-type='done' password='true' placeholder='请输入密码'bindinput="setpwd"></input>
+    </view>
+   
+  </view>
+  <navigator class="na"style='color:blue;font-size=2px'>忘记密码？</navigator>
+  <button  class='button1 button-cover'bindtap='tologin'>登录</button>
+  <button class='button button-cover'bindtap='toregister'>免费注册获得VIP体验</button>
+
+</view>
