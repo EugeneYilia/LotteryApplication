@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class="container">
+ <view style='height:100%;width:100%;'>
+  <!--走马灯广告-->
+  <view class='banner'>
+    
+  </view>
+  <!--个人信息bannner-->
+  <view style="background:linear-gradient(to right,#f9c05e,#ff9d1b)" class=" userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称
+    </button>
+    <view class='x'wx:else>
+      <view class="infor" >
+       
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"       background-size="cover"></image>
+        
+         <view class='name'>{{userInfo.nickName}}</view> 
+      </view>
+      <button hover-class="button-over"class='button'bindtap='signiture'>{{buttonword}}</button>
+    </view>
+    <view class='key'>
+       <image class='img1' src='../../assets/6.png'/>
+       <text style='font-weight:bold;font-size:10px; width:30%;margin-top:3%;color:white;'>彩豆数:{{caidou}}</text>
+       <image class='img2' src='../../assets/7.png'/>
+       <text style='font-weight:bold;font-size:10px; width:30%;margin-top:3%;color:white;'>我的钥匙:{{keynumber}}</text>    
+    </view>
+   
+  </view>
+  <!--广告位-->
+  <view class='adv'>
+  
+  
+  
+  
+  
+  </view>
+
+
+  <!--主功能-->
+  
+    <view class='main'>
+        <view class='one'>
+           <view class='a'>
+             <image bindtap="evaluate"style='width:100%;height:100%;'src="../../assets/1.png"/>
+           </view>
+           <view class='b'>
+             <image bindtap="getbeans"style='width:100%;height:100%;'src="../../assets/2.png"/>
+           </view>
+
+        </view>
+
+        <view class='two'>
+          <view class='c'>
+             <image bindtap="exchange"style='width:100%;height:100%;'src="../../assets/3.png"/>
+          </view>
+          <view class='d'>
+             <image bindtap="drawluck"style='width:100%;height:100%;'src="../../assets/4.png"/>
+          </view>
+
+
+
+   
+        </view>
+  
+   
+  
+    </view>
+
+
+   
+      
+    
+ 
+
+
+ </view>
+</view>
+

@@ -1,0 +1,43 @@
+<view class="top">
+ <image class="image1" mode="widthFix" src="/image/头像.png"></image>
+  <view class="w1">
+   <image class="image2" mode="widthFix" src="/image/彩豆.png"></image>
+   <view class="text1">{{numberOfCaidou}}</view>
+   </view>
+  <view class="w2">
+   <image class="image3" mode="widthFix" src="/image/钥匙1.png"></image>
+   <view class="text2">{{numberOfKey}}</view>
+  </view>
+  <button class="get">获取钥匙</button>
+</view>
+
+<view class="mid">
+ <view class="item">
+  <image class="image3" mode="widthFix" src="/image/钥匙3.png"></image>
+  <image class="image4" mode="widthFix" src="/image/彩豆1.png"></image>
+  <image class="image5" mode="widthFix" src="/image/彩金卡.png"></image>
+ </view>
+
+ <view class="turntable">
+
+ <template name="wheel" >
+  <view class="wheel_wp">
+  	<block	wx:if = "{{mode == 1}}">
+	    <image src = "../../components/wheel/images/dial_bg.png"/>
+	    <view class="wheel_pointer" style="-webkit-transform:rotate({{deg}}deg) translateZ(0);transform:rotate({{deg}}deg) translateZ(0)" bindtap="start"><image src = "../../components/wheel/images/dial_pointer.png" /></view>
+	</block>
+	<block	wx:if = "{{mode == 2}}">
+	    <image src = "../../components/wheel/images/dial_bg.png" style="-webkit-transform:rotate({{deg}}deg) translateZ(0);transform:rotate({{ deg}}deg) translateZ(0)"/>
+	    <view class="wheel_pointer" bindtap="start"><image src = "../../components/wheel/images/dial_pointer.png" /></view>	
+	</block>
+  </view>
+</template> 
+
+ </view>
+
+ <view class="la">
+ <image class="image8" mode="widthFix" src="/image/左.png"></image>
+  <button class="but2">往下载万彩APP</button>
+ <image class="image9" mode="widthFix" src="/image/右.png"></image>
+</view>
+</view>

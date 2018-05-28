@@ -1,0 +1,35 @@
+
+<view class="container">
+
+  <view class="info">
+
+   <view class='w'>
+
+  <view class="w1">
+
+  <view class="friend">
+      <view class='text1'>已邀请</view>
+      <view class='number'>{{numberOfFriends}}</view>
+      <view class='text2'>位好友</view>
+  </view>
+
+</view>
+
+<view class="get">
+  <view class="text3">共获</view>
+
+  <view class="caoidou">
+  <image class="image1" mode="widthFix" src="/image/彩豆.png"></image>
+  </view>
+
+  <view class="text3">{{count}}个</view>
+</view>
+
+</view>
+  <button  bindtap="invite">立即邀请</button>
+
+</view>
+
+</view> 
+
+

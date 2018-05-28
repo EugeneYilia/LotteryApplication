@@ -1,0 +1,12 @@
+{
+    
+   
+      "navigationBarBackgroundColor": "#ff5a00",
+      "navigationBarTextStyle": "green",
+      "navigationBarTitleText": "竞彩分析",
+      "backgroundColor": "fff6e5",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false,
+      "onReachBottomDistance": 50
+    
+}
