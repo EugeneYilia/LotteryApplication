@@ -1,0 +1,12 @@
+<view class="avatar">
+  <image src="{{myAvatar}}" bindtap="loginHandle"></image>
+</view>
+
+<view class="cells">
+
+  <navigator url="/pages/personalinfor/personalinfor" class="item">个人信息</navigator>
+  <navigator url="/pages/score/score" class="item">我的积分</navigator>
+  <navigator url="/pages/signiture/signiture" class="item">我的权限</navigator>
+  <view class="divider"></view>
+  <navigator url="/pages/startvip/startvip" class="item">会员中心</navigator>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/self/self.wxml-->
+<view class="container">
+  <view class="about-page">
+    <view >
+
+      <view class="section-1">
+        <view class="avatar">
+          <text>头像</text>
+          <image src="{{myAvatar}}"></image>
+          <!--个人头像-->
+        </view>
+        <view class="divider"></view>
+        <view class="detail">
+          <view class="name field">
+            <text>名字</text>
+            <text>{{myName}}</text>
+            <!--个人名称-->
+          </view>
+          <view class="divider"></view>
+
+          <view class="business field">
+            <text>性别</text>
+            <image wx:if='{{gender==0}}' src="../../assets/about.png"></image>
+            <image wx:if='{{gender==1}}' src="../../assets/male.png"></image>
+            <image wx:if='{{gender==2}}' src="../../assets/female.png"></image>
+            <text wx:if='{{gender==0}}'>{{genderUnknown}}</text>
+            <text wx:if='{{gender==1}}'>{{genderMale}}</text>
+            <text wx:if='{{gender==2}}'>{{genderFemale}}</text>
+            <!--个人性别-->
+          </view>
+
+          <view class="divider"></view>
+
+          <view class="location field">
+            <text>地区：</text>
+            <image src="../../assets/local.png"></image>
+            <text wx:if="{{myCountry==''}}">{{locationUnknown}}</text>
+            <text>{{myCountry}}</text>
+            <text>{{separator}}</text>
+            <text>{{myProvince}}</text>
+            <text wx:if="{{myProvince==''}}">{{locationUnknown}}</text>
+            <text>{{separator}}</text>
+            <text>{{myCity}}</text>
+            <text wx:if="{{myCity==''}}">{{locationUnknown}}</text>
+            <!--用户所在国家 省 市-->
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  
+
+</view>
+

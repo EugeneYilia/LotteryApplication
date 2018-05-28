@@ -1,0 +1,189 @@
+page
+{
+  background-color: #778899;
+}
+
+
+.about-page
+{
+  flex:1;/*所有弹性盒模型对象的子元素都有相同的长度,忽略它们的内容*/
+}
+
+.tag-tag
+{
+  width: 90%;
+  margin:0 auto;
+  margin-top:50rpx;
+  background-color: #fff;
+  border-radius:10px;
+  box-shadow: 10px 9px 20px #240A33;/*水平位移 垂直位移 模糊半径 阴影颜色*/
+  position:relative;/*相对于其正常位置进行定位,与其中的彩票图标配合，让彩票图标以.tag-tag为父元素进行absolute定位，使其可以定位到.tag-tag里面*/
+}
+
+.tag-tag .section-1
+{
+  display:flex;
+  flex-direction: row;
+  height: 136rpx;
+  line-height: 136rpx;
+  padding: 20rpx;
+}
+
+.tag-tag .section-1 .avatar
+{
+  width: 136rpx;
+  height: 136rpx;/*高与section-1相同*/
+  float:left;
+}
+
+.tag-tag .section-1 .avatar image
+{
+  width: 110rpx;
+  height:110rpx;
+  /*
+  border-radius: 60px;
+  */
+}
+
+.tag-tag .section-1 .detail
+{
+  flex:3;/*扩展比率 收缩比率 伸缩基准值*/
+  float: right;
+}
+
+.tag-tag .section-1 .detail .business
+{
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.tag-tag .section-1 .detail .location
+{
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.field
+{
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.field image
+{
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.tag-tag .section-2
+{
+  height: 204rpx;
+}
+
+.divider {
+  height: 10rpx;
+  box-shadow: inset 0 1rpx 2rpx #eee;
+  width:100%
+}
+
+
+.tag-tag .section-2 .section-2-detail
+{
+  padding-left: 20px;
+  color: #aaa;
+}
+
+.tag-tag .section-2 .section-2-detail .business
+{
+  line-height: 20rpx;
+  font-size: 22rpx;
+}
+
+.tag-tag .section-2 .section-3
+{
+   position: absolute;
+   width: 140rpx;
+   height: 140rpx;
+   right: 20rpx;
+   bottom: 0px;
+}
+
+.tag-tag .section-2 .section-3 image
+{
+  width: 100%;
+  height: 100%;
+}
+
+.company-introduction
+{
+  padding: 40rpx;
+}
+
+.company-introduction .company-introduction-description
+{
+  font-size: 30rpx;
+  margin-top:10rpx;
+  line-height: 50rpx;
+  color:#888;
+}
+
+.confirm-btn
+{
+   font-size: 44rpx;
+   line-height: 85rpx;
+   height: 85rpx;
+   background: #00d4ff;
+   color: #7D1528;
+   text-align: center;
+   border-radius: 100px;
+   margin: 15% 20%;
+}
+
+.confirm-btn2
+{
+   font-size: 44rpx;
+   line-height: 85rpx;
+   height: 85rpx;
+   background: #00d4ff;
+   color: #7D1528;
+   text-align: center;
+   border-radius: 100px;
+   margin: 15% 20%;
+}
+
+.confirm-btn3
+{
+   font-size: 44rpx;
+   line-height: 85rpx;
+   height: 85rpx;
+   background: #00d4ff;
+   color: #7D1528;
+   text-align: center;
+   border-radius: 100px;
+   margin: 15% 20%;
+}
+
+.confirm-btn4
+{
+   font-size: 44rpx;
+   line-height: 85rpx;
+   height: 85rpx;
+   background: #00d4ff;
+   color: #7D1528;
+   text-align: center;
+   border-radius: 100px;
+   margin: 15% 20%;
+}
+
+.confirm-btn5
+{
+   font-size: 44rpx;
+   line-height: 85rpx;
+   height: 85rpx;
+   background: #00d4ff;
+   color: #7D1528;
+   text-align: center;
+   border-radius: 100px;
+   margin: 15% 20%;
+}
+

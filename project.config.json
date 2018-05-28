@@ -9,8 +9,13 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
+<<<<<<< HEAD
 	"appid": "wxd6823bc3bf101bf9",
 	"projectname": "new",
+=======
+	"appid": "wxae3fa9676dd4a095",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%B7%A5%E7%A8%8B",
+>>>>>>> 4b430d4fc23f966ee0ed448da1bda361fe3c7598
 	"isGameTourist": false,
 	"condition": {
 		"search": {

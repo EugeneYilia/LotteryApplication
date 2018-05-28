@@ -1,5 +1,6 @@
 {
   "pages":[
+<<<<<<< HEAD
     "pages/firstpage/firstpage",
     "pages/evaluate/evaluate",
     "pages/detail/detail",
@@ -19,4 +20,23 @@
     "onReachBottomDistance": 50
   }
   
+=======
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/startvip/startvip",
+    "pages/person/person",
+    "pages/evaluate/evaluate",
+    "pages/personalinfor/personalinfor",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/score/score"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "竞彩助手",
+    "navigationBarTextStyle":"black"
+  }
+>>>>>>> 4b430d4fc23f966ee0ed448da1bda361fe3c7598
 }

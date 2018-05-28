@@ -1,8 +1,39 @@
-<<<<<<< HEAD
-  <!--index.wxml-->
+<!--index.wxml-->
 <view class="container" >
- 
-  <view class='news'style="font-weight:bold;font-size:15px;color:#ff5a00;font-family:sans-serif">赛事数据</view>
+  <view style="width:100%;height:20%;background:linear-gradient(to right,#61b5ea,#0f38ed)" class=" userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称
+    </button>
+
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"
+      background-size="cover"></image>
+      <view class='info'>
+        <text >{{userInfo.nickName}}</text>
+        <view class="Vip">
+             <view>{{Vip}}</view>
+             <view>{{initdate}}</view>
+        </view>
+      </view>
+     
+    </block>
+     <button hover-class="button-over"class='button'style="position:absolute;right:12%;top:7%;color:white;background-color:#23be5d" bindtap='startvip'>{{buttonword}}</button>
+  </view>
+
+  <!--搜索框-->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+     <view class="weui-search-bar__box">
+       <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+       <input type="text" class="weui-search-bar__input" placeholder="输入比赛编号或联赛信息或队伍名称查询" name="info" value="{{Infor}}" bindinput="inforinput"bindconfirm="search" />
+       <view class="weui-icon-clear" bindtap="wxSearchClear">
+          <icon type="clear" size="14"></icon>
+       </view>
+     </view>
+    </view>
+    
+  </view>
+
+  <view class='news'style="font-weight:bold;font-size:15px;color:green;font-family:sans-serif">赛事分析</view>
 
    <!--表格-->
   <view class='table'>
@@ -123,29 +154,3 @@
   </view>
 
 </view>
-=======
-
-
-
-<!--pages/evaluate/evaluate.wxml-->
-<view>
-	<view class="caption">离散指数趋势图</view>
-	<!-- 图例 -->
-	<view class="indicator-container">
-		<view class="indicator">
-			<view class="circle red"></view><text>临场胜</text>
-		</view>
-		<view class="indicator">
-			<view class="circle yellow"></view><text>临场平</text>
-		</view>
-    <view class="indicator">
-			<view class="circle black"></view><text>临场负</text>
-		</view>
-    <view class="indicator">
-			<view class="circle purple "></view><text>离散峰值</text>
-		</view>
-	</view>
-	<canvas canvas-id="line-canvas" id="line-canvas"></canvas>
-</view>
-
->>>>>>> 4b430d4fc23f966ee0ed448da1bda361fe3c7598

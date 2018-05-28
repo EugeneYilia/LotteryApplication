@@ -1,0 +1,10 @@
+<!--pages/score/score.wxml-->
+<view>
+  <view class='a'style="background-image:url('../../assets/images.png')">
+     <text class='b'style="font-size:25px;font-family:Serif;">总积分</text>
+     <text class='c'>{{score}}</text>
+  </view>
+
+
+
+</view>
