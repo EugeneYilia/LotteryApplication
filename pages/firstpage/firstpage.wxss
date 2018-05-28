@@ -1,0 +1,208 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15%;
+  width: 90%;
+  height: 30%;
+  border-radius: 10px;
+  margin-left: 5%
+}
+
+.banner{
+
+
+}
+.adv{
+   height: 15%;
+   width: 90%;
+   margin-top: 5%;
+   margin-left: 5%;
+   border: 1px solid green;
+   border-radius: 10px;
+
+}
+.one{
+   margin-left: 5%;
+  width: 52%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.two{
+  margin-left: 2%;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.a{
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  width:100%;
+  border-radius: 10px;
+}
+.b{
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  width:100%;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+.c{
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  width:100%;
+  border-radius: 10px;
+}
+.d{
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  width:100%;
+  margin-top: -4%;
+  border-radius: 10px;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+   height: 70%;
+   width: 97%;
+   margin-top: 5%;
+}
+
+.infor{
+   display: flex;
+   flex-direction: column ;
+   height: 100%;
+    width: 76%;
+  
+}
+
+.key{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+
+}
+.img1{
+   margin-left: 15%;
+   width:12%;
+   height: 100%;
+}
+
+.img2{
+   margin-left:2%;
+   width:12%;
+   height: 100%;
+}
+.x{
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  border: 3px solid #ff5a00;
+  margin-left: 55%;
+  margin-top: 3%;
+
+}
+
+
+.name{
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  vertical-align:middle;
+  height: 20%; 
+  margin-top: 2%;
+  margin-left: 58%;
+}
+
+
+
+.container{ 
+   position: fixed;
+  display: flex;
+   flex-direction: column;
+    margin-top: 0;
+    right: 0;
+    width: 100%;
+   background-color: #fff6e5;
+}
+ 
+ .button{
+  width: 24%;
+  height:25%;
+  border-radius: 10%;
+  font-size:10px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  box-shadow:3rpx 3rpx 3rpx 3rpx rebeccapurple;
+
+  margin-left:-3%;
+  margin-top:5%;
+   display: flex;
+   align-items: center;
+ justify-content: center
+ }
+
+ .button-over{
+  background-color:darkgray;
+  opacity: 0.7;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

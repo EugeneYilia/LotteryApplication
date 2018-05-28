@@ -1,0 +1,66 @@
+<view class="top">
+ <image class="image1" mode="widthFix" src="../../assets/头像.png"></image>
+  <view class="w1">
+   <image class="image2" mode="widthFix" src="../../assets/6.png"></image>
+   <view class="text1">{{numberOfCaidou}}</view>
+   </view>
+  <view class="w2">
+   <image class="image3" mode="widthFix" src="../../assets/7.png"></image>
+   <view class="text2">{{numberOfKey}}</view>
+  </view>
+  <button class="get">获取钥匙</button>
+</view>
+
+<view class="bottom"> 
+ <view class="box">
+   <image class="image4" mode="widthFix" src="../../assets/new.png"></image>
+     <view class="text">3元礼金券</view>
+     <view class="exchange">
+       <image class="image5" mode="widthFix" src="../../assets/6.png"></image>
+        <view class="text2">{{one_caidou}}+</view>
+         <image class="image6" mode="widthFix" src="../../assets/8.png"></image>
+        <view class="text2">{{one_key}}</view>
+       <button class="but1">兑换</button>
+     </view>
+ </view>
+  <view class="box">
+   <image class="image4" mode="widthFix" src="../../assets/new.png"></image>
+    <view class="text">3元礼金券</view>
+     <view class="exchange">
+       <image class="image5" mode="widthFix" src="../../assets/6.png"></image>
+        <view class="text2">{{one_caidou}}+</view>
+         <image class="image6" mode="widthFix" src="../../assets/8.png"></image>
+        <view class="text2">{{one_key}}</view>
+       <button class="but1">兑换</button>
+     </view>
+ </view> 
+</view>
+<view class="bottom"> 
+ <view class="box">
+    <image class="image7" mode="widthFix" src="../../assets/hot.png"></image>
+     <view class="text">3元礼金券</view>
+     <view class="exchange">
+       <image class="image5" mode="widthFix" src="../../assets/6.png"></image>
+        <view class="text2">{{one_caidou}}+</view>
+         <image class="image6" mode="widthFix" src="../../assets/8.png"></image>
+        <view class="text2">{{one_key}}</view>
+       <button class="but1">兑换</button>
+     </view>
+ </view>
+  <view class="box">
+   <image class="image7" mode="widthFix" src="../../assets/hot.png"></image>
+    <view class="text">3元礼金券</view>
+     <view class="exchange">
+       <image class="image5" mode="widthFix" src="../../assets/6.png"></image>
+        <view class="text2">{{one_caidou}}+</view>
+         <image class="image6" mode="widthFix" src="../../assets/8.png"></image>
+        <view class="text2">{{one_key}}</view>
+       <button class="but1">兑换</button>
+     </view>
+ </view> 
+</view>
+<view class="la">
+ <image class="image8" mode="widthFix" src="../../assets/左.png"></image>
+ <button class="but2">前往下载万彩APP</button>
+ <image class="image9" mode="widthFix" src="../../assets/右.png"></image>
+</view>

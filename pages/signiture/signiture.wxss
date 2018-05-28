@@ -1,0 +1,24 @@
+/* pages/signiture/signiture.wxss */
+.text{
+  color: #778899;
+  font-size: 30rpx;
+}
+
+.button{
+  background-color: #4CAF50;
+  font-size: 50rpx;
+  border:none;
+  text-align: center;
+  color: #FF8C00;
+  width: 300rpx;
+  height: 100rpx;
+  padding:5px
+}
+
+.button-hover{
+  background-color: red;
+}
+
+
+
+
