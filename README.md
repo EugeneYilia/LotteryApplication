@@ -1,2 +1,2 @@
 # LotteryApplication
-A front end part of lottery analysis application.
+A front end part of lottery application.
