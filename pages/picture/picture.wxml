@@ -1,0 +1,24 @@
+
+
+
+<!--pages/evaluate/evaluate.wxml-->
+<view>
+	<view class="caption">离散指数趋势图</view>
+	<!-- 图例 -->
+	<view class="indicator-container">
+		<view class="indicator">
+			<view class="circle red"></view><text>临场胜</text>
+		</view>
+		<view class="indicator">
+			<view class="circle yellow"></view><text>临场平</text>
+		</view>
+    <view class="indicator">
+			<view class="circle black"></view><text>临场负</text>
+		</view>
+    <view class="indicator">
+			<view class="circle purple "></view><text>离散峰值</text>
+		</view>
+	</view>
+	<canvas canvas-id="line-canvas" id="line-canvas"></canvas>
+</view>
+

@@ -1,0 +1,102 @@
+<view class="background">
+   <view class="sign">
+      <view class="top">
+         <image class="image" mode="widthFix" src="../../images/1.png"></image>
+         <view class="text">每日签到奖励</view>
+      </view>
+      <view class="one">
+
+         <view class="block">
+           <view style=' background-color: #e5e5e5;' wx:if="{{condition1}}">
+            <text class="text1">第一天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{condition2}}">
+            <text class="text1" >第一天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">150彩豆</text>
+           </view>
+         </view>
+
+         <view class="block1">
+           <view style=' background-color: #e5e5e5;' wx:if="{{second1}}">
+            <text class="text1">第二天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{second2}}">
+            <text class="text1" >第二天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">150彩豆</text>
+           </view>
+         </view>
+         <view class="block1">
+             <view style=' background-color: #e5e5e5;' wx:if="{{third1}}">
+            <text class="text1">第三天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{third2}}">
+            <text class="text1" >第三天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">200彩豆</text>
+           </view>
+        </view>
+        <view class="block1">
+              <view style=' background-color: #e5e5e5;' wx:if="{{fourth1}}">
+            <text class="text1">第四天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{fourth2}}">
+            <text class="text1" >第四天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">200彩豆</text>
+           </view>
+        </view>
+      </view>
+      <view class="two">
+        <view class="block2">
+             <view style=' background-color: #e5e5e5;' wx:if="{{fifth1}}">
+            <text class="text1">第五天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{fifth2}}">
+            <text class="text1" >第五天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">250彩豆</text>
+           </view>
+        </view>
+        <view class="block2">
+               <view style=' background-color: #e5e5e5;' wx:if="{{sixth1}}">
+            <text class="text1">第六天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{sixth2}}">
+            <text class="text1" >第六天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">250彩豆</text>
+           </view>
+            
+            </view>
+        <view class="block2">
+                 <view style=' background-color: #e5e5e5;' wx:if="{{seventh1}}">
+            <text class="text1">第七天</text>
+            <image class="image4" mode="widthFix" src="../../images/5.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{seventh2}}">
+            <text class="text1" >第七天</text>
+            <image class="image4" mode="widthFix" src="../../images/5.png"></image>
+            <text class="text2">500彩豆</text>
+           </view>
+             
+             </view>
+        </view>
+        <button hover-class="button-over" class="but"bindtap="reward">签到领取</button>
+        
+   </view>
+</view>

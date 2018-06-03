@@ -1,0 +1,193 @@
+<!--index.wxml-->
+<view class="container">
+ <view style='height:100%;width:100%;'>
+  <!--走马灯广告-->
+  <modal wx:if="{{showm}}" >签到成功！</modal>
+  <view class='banner'>
+    
+  </view>
+  
+  <!--每日签到页面-->
+  <view class='drawer_box'wx:if="{{show}}">
+ <view class="background" >
+   
+   <view class='clear' bindtap="wxSearchClear">
+        <icon type="clear" size="20"></icon>
+   </view>
+   <view class="sign">
+      
+      <view class="top">
+         <image class="image" mode="widthFix" src="../../images/1.png"></image>
+         <view class="text">每日签到奖励</view>
+      </view>
+      <view class="one1">
+
+         <view class="block">
+           <view style=' background-color: #e5e5e5;' wx:if="{{condition1}}">
+            <text class="text1">第一天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{condition2}}">
+            <text class="text1" >第一天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">150彩豆</text>
+           </view>
+         </view>
+
+         <view class="block1">
+           <view style=' background-color: #e5e5e5;' wx:if="{{second1}}">
+            <text class="text1">第二天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{second2}}">
+            <text class="text1" >第二天</text>
+            <image class="image1" mode="widthFix" src="../../images/2.png"></image>
+            <text class="text2">150彩豆</text>
+           </view>
+         </view>
+         <view class="block1">
+             <view style=' background-color: #e5e5e5;' wx:if="{{third1}}">
+            <text class="text1">第三天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{third2}}">
+            <text class="text1" >第三天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">200彩豆</text>
+           </view>
+        </view>
+        <view class="block1">
+              <view style=' background-color: #e5e5e5;' wx:if="{{fourth1}}">
+            <text class="text1">第四天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{fourth2}}">
+            <text class="text1" >第四天</text>
+            <image class="image2" mode="widthFix" src="../../images/3.png"></image>
+            <text class="text2">200彩豆</text>
+           </view>
+        </view>
+      </view>
+      <view class="two1">
+        <view class="block2">
+             <view style=' background-color: #e5e5e5;' wx:if="{{fifth1}}">
+            <text class="text1">第五天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{fifth2}}">
+            <text class="text1" >第五天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">250彩豆</text>
+           </view>
+        </view>
+        <view class="block2">
+               <view style=' background-color: #e5e5e5;' wx:if="{{sixth1}}">
+            <text class="text1">第六天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{sixth2}}">
+            <text class="text1" >第六天</text>
+            <image class="image3" mode="widthFix" src="../../images/4.png"></image>
+            <text class="text2">250彩豆</text>
+           </view>
+            
+            </view>
+        <view class="block2">
+                 <view style=' background-color: #e5e5e5;' wx:if="{{seventh1}}">
+            <text class="text1">第七天</text>
+            <image class="image4" mode="widthFix" src="../../images/5.png"></image>
+            <text class="text2">已签到</text>
+           </view>
+           <view style=' background-color: #fefadf;' wx:if="{{seventh2}}">
+            <text class="text1" >第七天</text>
+            <image class="image4" mode="widthFix" src="../../images/5.png"></image>
+            <text class="text2">500彩豆</text>
+           </view>
+             
+             </view>
+        </view>
+        <button hover-class="button-over" class="but"bindtap="reward">签到领取</button>
+   </view>
+</view>
+</view>
+
+
+
+
+  <!--个人信息bannner-->
+  <view style="background:linear-gradient(to right,#f9c05e,#ff9d1b)" class=" userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称
+    </button>
+    <view class='x'wx:else>
+      <view class="infor" >
+       
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"       background-size="cover"></image>
+        
+         <view class='name'>{{userInfo.nickName}}</view> 
+      </view>
+      <button hover-class="button-over"class='button'bindtap='signiture'>{{buttonword}}</button>
+    </view>
+    <view class='key'>
+       <image class='img1' src='../../assets/6.png'/>
+       <text style='font-weight:bold;font-size:10px; width:30%;margin-top:3%;color:white;'>彩豆数:{{caidou}}</text>
+       <image class='img2' src='../../assets/7.png'/>
+       <text style='font-weight:bold;font-size:10px; width:30%;margin-top:3%;color:white;'>我的钥匙:{{keynumber}}</text>    
+    </view>
+   
+  </view>
+  <!--广告位-->
+  <view class='adv'>
+  
+  
+  
+  
+  
+  </view>
+
+
+  <!--主功能-->
+  
+    <view class='main'>
+        <view class='one'>
+           <view class='a'>
+             <image bindtap="evaluate"style='width:100%;height:100%;'src="../../assets/1.png"/>
+           </view>
+           <view class='b'>
+             <image bindtap="getbeans"style='width:100%;height:100%;'src="../../assets/2.png"/>
+           </view>
+
+        </view>
+
+        <view class='two'>
+          <view class='c'>
+             <image bindtap="exchange"style='width:100%;height:100%;'src="../../assets/3.png"/>
+          </view>
+          <view class='d'>
+             <image bindtap="drawluck"style='width:100%;height:100%;'src="../../assets/4.png"/>
+          </view>
+
+
+
+   
+        </view>
+  
+   
+  
+    </view>
+
+
+   
+      
+    
+ 
+
+
+ </view>
+</view>
+

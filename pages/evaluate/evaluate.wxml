@@ -1,0 +1,137 @@
+  <!--index.wxml-->
+<view class="container" >
+
+
+  <!--搜索框-->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+     <view class="weui-search-bar__box">
+       <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+       <input type="text" class="weui-search-bar__input" placeholder="请输入联赛名称或队伍名称" name="info" value="{{Infor}}" bindinput="inforinput"bindconfirm="search" />
+       <view class="weui-icon-clear" bindtap="wxSearchClear">
+          <icon type="clear" size="14"></icon>
+       </view>
+     </view>
+    </view>
+    
+  </view>
+   <!--表格-->
+  <view class='table'>
+       <view class='head'>
+          <view class='ta'>编号</view>
+          <view class='tb'>联赛</view>
+          <view class='tc'>队伍</view>
+          <view class='td'>
+               <view class='tg'>初始赔率   即时赔率</view>
+               <view class='tf'>
+                  <view class='one'>胜</view>
+                  <view class='two'>平</view>
+                  <view class='three'>负</view>
+               </view>
+          </view>
+          <view class='te'>
+               <view class='tw'>初始离散   即时离散</view>
+               <view class='tf'>
+                  <view class='one1'>胜</view>
+                  <view class='two1'>平</view>
+                  <view class='three1'>负</view>
+                  <view class='four'> </view>
+               </view>
+          </view>
+       </view>
+       <!--查询结果-->
+      <scroll-view scroll-y="true"style="height: 85%;">
+       <view>
+        <block wx:for="{{listData}}"wx:key="{{count}}">
+           <view class='a'>
+           <view class='ta1'>{{item.count}}</view>
+           <view class='tb1'>{{item.leagueName}}</view>
+           <view class='b'>
+                <view>{{item.hostTeamName}}</view>
+                <view>VS</view>
+                <view>{{item.guestTeamName}}</view>
+                <view>{{item.matchTime}}</view>
+           </view>
+           <view class='c'>
+              <view class='f'>
+                <view class='adj'>{{item.initialWinOdds}}</view>
+                <view class='adj'>{{item.initialDrawOdds}}</view>
+                <view class='adjus'>{{item.initialLoseOdds}}</view>
+              </view>
+              <view class='f'>
+                <view class='adju'>{{item.currentWinOdds}}</view>
+                <view class='adju'>{{item.currentDrawOdds}}</view>
+                <view class='adjust'>{{item.currentLoseOdds}}</view>
+              </view>
+
+           </view>
+           <view class='d'>
+                <view class='e'style='width:95%'>
+                  <view class='f'>
+                    <view class='dj'>{{item.initialWinScatter}}</view>
+                    <view class='dj'>{{item.initialDrawScatter}}</view>
+                    <view class='djus'>{{item.initialLoseScatter}}</view>
+                  </view>
+                  <view class='f'>
+                    <view class='dju'>{{item.currentWinScatter}}</view>
+                    <view class='dju'>{{item.currentDrawScatter}}</view>
+                    <view class='djust'>{{item.currentLoseScatter}}</view>
+                  </view>
+                </view>
+                <view bindtap='toinfor'>更多>></view>
+           </view>
+         </view>
+        </block>
+       
+       
+       
+       </view>
+
+
+
+       <block wx:for="{{initData}}"wx:key="{{Id}}">
+            <view class='a'>
+           <view class='ta'>{{item.count}}</view>
+           <view class='tb'>{{item.leagueName}}</view>
+           <view class='b'>
+                <view>{{item.hostTeamName}}</view>
+                <view>VS</view>
+                <view>{{item.guestTeamName}}</view>
+                <view>{{item.matchTime}}</view>
+           </view>
+           <view class='c'>
+              <view class='f'>
+                <view class='adj'>{{item.initialWinOdds}}</view>
+                <view class='adj'>{{item.initialDrawOdds}}</view>
+                <view class='adjus'>{{item.initialLoseOdds}}</view>
+              </view>
+              <view class='f'>
+                <view class='adju'>{{item.currentWinOdds}}</view>
+                <view class='adju'>{{item.currentDrawOdds}}</view>
+                <view class='adjust'>{{item.currentLoseOdds}}</view>
+              </view>
+
+           </view>
+           <view class='d'>
+                <view class='e'>
+                  <view class='f'>
+                    <view class='dj'>{{item.initialWinScatter}}</view>
+                    <view class='dj'>{{item.initialDrawScatter}}</view>
+                    <view class='djus'>{{item.initialLoseScatter}}</view>
+                  </view>
+                  <view class='f'>
+                    <view class='dju'>{{item.currentWinScatter}}</view>
+                    <view class='dju'>{{item.currentDrawScatter}}</view>
+                    <view class='djust'>{{item.currentLoseScatter}}</view>
+                  </view>
+                </view>
+
+                <view bindtap='toinfor'>更多>></view>
+           </view>
+         </view>
+       </block>
+      </scroll-view>
+    
+  </view>
+
+</view>
